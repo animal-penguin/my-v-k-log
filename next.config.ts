@@ -1,10 +1,13 @@
-import type { NextConfig } from "next";
+// next.config.ts
+import { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  experimental: {
-    appDir: false,  // App Router を無効化して Pages Router モードにする
-  },
-}as NextConfig;
+  // ここで直接指定
+  appDir: false,
+
+  // もし他に必要な設定があれば続けて書く
+  // pageExtensions: ['tsx','ts','jsx','js'],
+};
 
 export default nextConfig;
+
